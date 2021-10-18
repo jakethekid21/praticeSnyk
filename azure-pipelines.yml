@@ -28,11 +28,11 @@ stages:
         tags: |
           $(tag)
     - task: SnykSecurityScan@1
-  inputs:
-    serviceConnectionEndpoint: 'snykConnect'
-    testType: 'container'
-    dockerImageName: 'snykPraticeimage'
-    monitorWhen: 'always'
-    failOnIssues: true
-    projectName: 'praticeSnyk'
-    organization: 'jacobpalomo21'
+      inputs:
+       serviceConnectionEndpoint: 'snykConnect'
+       testType: 'container'
+       dockerImageName: 'snykPraticeimage'
+       monitorWhen: 'always'
+       failOnIssues: true
+       projectName: 'praticeSnyk'
+       organization: 'jacobpalomo21'
